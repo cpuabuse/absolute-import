@@ -10,11 +10,10 @@ if package_path not in path:
 # Imports
 from os.path import sep
 from setuptools import setup, find_packages
-from pkg_resources import parse_requirements
 
-with open("README.md", "r") as readme, open("requirements" + sep + "prod.txt", "r") as requirements:
+with open("README.md", "r") as readme:
 	setup(
-		name="absolute-import", # Replace with your own username
+		name="absolute-import",
 		version="0.1.dev0",
 		author="cpuabuse.com",
 		author_email="pypi@cpuabuse.com",

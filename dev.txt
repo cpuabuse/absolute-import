@@ -1,4 +1,3 @@
--r common.txt
 autopep8
 pylint
 pytest
