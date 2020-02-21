@@ -1,0 +1,49 @@
+stages:
+  - stage: test
+    jobs:
+      - job: python
+        strategy:
+          matrix:
+            linux_35:
+              os: ubuntu-latest
+              python_version: '3.5'
+            linux_36:
+              os: ubuntu-latest
+              python_version: '3.6'
+            linux_37:
+              os: ubuntu-latest
+              python_version: '3.7'
+            linux_38:
+              os: ubuntu-latest
+              python_version: '3.8'
+            macos_35:
+              os: macOS-latest
+              python_version: '3.5'
+            macos_36:
+              os: macOS-latest
+              python_version: '3.6'
+            macos_37:
+              os: macOS-latest
+              python_version: '3.7'
+            macos_38:
+              os: macOS-latest
+              python_version: '3.8'
+            windows_35:
+              os: windows-latest
+              python_version: '3.5'
+            windows_36:
+              os: windows-latest
+              python_version: '3.6'
+            windows_37:
+              os: windows-latest
+              python_version: '3.7'
+            windows_38:
+              os: windows-latest
+              python_version: '3.8'
+        pool:
+          vmImage: $(os)
+        steps:
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: $(python_version)
+          - pwsh: script/pipeline/Invoke-Test.ps1
