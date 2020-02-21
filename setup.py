@@ -6,7 +6,6 @@ from sys import path
 package_path: str = Path(__file__).parent.joinpath("src").as_posix()
 if package_path not in path:
 	path.append(package_path)
-from absolute_import.metadata import __version__
 
 # Imports
 from os.path import sep
@@ -16,7 +15,7 @@ from pkg_resources import parse_requirements
 with open("README.md", "r") as readme, open("requirements" + sep + "prod.txt", "r") as requirements:
 	setup(
 		name="absolute-import", # Replace with your own username
-		version=__version__,
+		version="0.0.dev2",
 		author="cpuabuse.com",
 		author_email="pypi@cpuabuse.com",
 		description="A package to automate setting up absolute imports and namespace.",
