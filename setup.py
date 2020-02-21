@@ -15,7 +15,7 @@ from pkg_resources import parse_requirements
 with open("README.md", "r") as readme, open("requirements" + sep + "prod.txt", "r") as requirements:
 	setup(
 		name="absolute-import", # Replace with your own username
-		version="0.1.0",
+		version="0.1.dev0",
 		author="cpuabuse.com",
 		author_email="pypi@cpuabuse.com",
 		description="A package to automate setting up absolute imports and namespace.",
