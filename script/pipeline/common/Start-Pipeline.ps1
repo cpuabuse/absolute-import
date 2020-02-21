@@ -16,6 +16,6 @@ if ($null -eq (Get-Variable -Name "StartPipelineGuard" -Scope "Script" -ErrorAct
 	[ValidateNotNull()][hashtable]$script:Paths += @{
 		InstallDependencies = Join-Path -Path "script" -ChildPath "pipeline" "common" "Install-Dependencies.ps1";
 		StopPipeline        = Join-Path -Path "script" -ChildPath "pipeline" "common" "Stop-Pipeline.ps1";
-		RequirementsPath    = Join-Path -Path "requirements" -ChildPath "dev.txt"
+		RequirementsPath    = "requirements.txt"
 	}
 }
