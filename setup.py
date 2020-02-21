@@ -14,7 +14,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as readme:
 	setup(
 		name="absolute-import",
-		version="0.2.0",
+		version="0.2.dev0",
 		author="cpuabuse.com",
 		author_email="pypi@cpuabuse.com",
 		description="A package to automate setting up absolute imports and namespace.",
