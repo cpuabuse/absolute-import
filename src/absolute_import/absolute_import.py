@@ -21,4 +21,3 @@ def absolute_import(file: str = None, path: str = None, name: str = None):
 	parent_path: str = Path(file).parent.joinpath("..").as_posix()
 	if parent_path not in sys_path:
 		sys_path.append(parent_path)
-
