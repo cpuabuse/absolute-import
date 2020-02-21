@@ -30,9 +30,6 @@ with open("README.md", "r") as readme, open("requirements" + sep + "prod.txt", "
 			"Natural Language :: English",
 			"Operating System :: OS Independent",
 			"Programming Language :: Python :: 3",
-			"Programming Language :: Python :: 3.3",
-			"Programming Language :: Python :: 3.4",
-			"Programming Language :: Python :: 3.5",
 			"Programming Language :: Python :: 3.6",
 			"Programming Language :: Python :: 3.7",
 			"Programming Language :: Python :: 3.8",
@@ -40,5 +37,5 @@ with open("README.md", "r") as readme, open("requirements" + sep + "prod.txt", "
 			"Topic :: Software Development :: Libraries :: Python Modules",
 			"Typing :: Typed"
 		],
-		python_requires=">=3.3"  # Due to https://www.python.org/dev/peps/pep-0420/
+		python_requires=">=3.6"  # Due to typing
 	)

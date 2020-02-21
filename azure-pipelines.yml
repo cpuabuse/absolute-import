@@ -4,9 +4,6 @@ stages:
       - job: python
         strategy:
           matrix:
-            linux_35:
-              os: ubuntu-latest
-              python_version: '3.5'
             linux_36:
               os: ubuntu-latest
               python_version: '3.6'
@@ -16,9 +13,6 @@ stages:
             linux_38:
               os: ubuntu-latest
               python_version: '3.8'
-            macos_35:
-              os: macOS-latest
-              python_version: '3.5'
             macos_36:
               os: macOS-latest
               python_version: '3.6'
@@ -28,9 +22,6 @@ stages:
             macos_38:
               os: macOS-latest
               python_version: '3.8'
-            windows_35:
-              os: windows-latest
-              python_version: '3.5'
             windows_36:
               os: windows-latest
               python_version: '3.6'
