@@ -9,9 +9,12 @@ target_path: str = Path(__file__).parent.joinpath("..").joinpath("..").joinpath(
 if target_path not in path:
 	path.append(target_path)
 
-# Imports
-from absolute_import.absolute_import import absolute_import
+# Importing from __init__.py
+from absolute_import import absolute_import
 
+"""
+Integration test for absolute-import.
+"""
 class TestAbsoluteImport:
 	def test_import(self):
 		# Set the absolute import

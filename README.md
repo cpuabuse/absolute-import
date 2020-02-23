@@ -11,7 +11,7 @@ Package providing a one-line functionality to set up a project for ability to pe
 1. In the root `__init__.py`.
 
 	```python
-	from absolute_import.absolute_import import absolute_import
+	from absolute_import import absolute_import
 
 	absolute_import(file=__file__)
 	```
@@ -19,7 +19,7 @@ Package providing a one-line functionality to set up a project for ability to pe
 1. In the root `__main__.py` or root directly executable python files.
 
 	```python
-	from absolute_import.absolute_import import absolute_import
+	from absolute_import import absolute_import
 
 	if __name__ == "__main__":
 		absolute_import(file=__file__)
@@ -30,7 +30,7 @@ Package providing a one-line functionality to set up a project for ability to pe
 1. In the root `__init__.py`.
 
 	```python
-	from absolute_import.absolute_import import absolute_import
+	from absolute_import import absolute_import
 
 	absolute_import(file=__file__, name=__name__, path=__path__)
 	```
@@ -38,7 +38,7 @@ Package providing a one-line functionality to set up a project for ability to pe
 1. In the root `__main__.py` or root directly executable python files.
 
 	```python
-	from absolute_import.absolute_import import absolute_import
+	from absolute_import import absolute_import
 
 	if __name__ == "__main__":
 		absolute_import(file=__file__, name=__name__, path=__path__)

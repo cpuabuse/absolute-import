@@ -15,3 +15,6 @@ __path__ = extend_path(__path__, __name__)
 
 # Import metadata
 from absolute_import.version import __version__
+
+# For export
+from absolute_import.absolute_import import absolute_import
