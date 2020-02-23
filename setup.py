@@ -21,8 +21,8 @@ with open("README.md", "r") as readme:
 		long_description=readme.read(),
 		long_description_content_type="text/markdown",
 		url="https://github.com/cpuabuse/absolute-import",
-		package_dir={"": "src"},
-		packages=find_packages("src"),
+		package_dir={"": "build" + sep + "deploy"},
+		packages=find_packages("build" + sep + "deploy"),
 		classifiers=[
 			"Intended Audience :: Developers",
 			"License :: OSI Approved :: ISC License (ISCL)",
