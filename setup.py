@@ -21,7 +21,7 @@ with open("README.md", "r") as readme:
 		long_description=readme.read(),
 		long_description_content_type="text/markdown",
 		url="https://github.com/cpuabuse/absolute-import",
-		package_dir={"absolute_import": "src"},
+		package_dir={"": "src"},
 		packages=find_packages("src"),
 		classifiers=[
 			"Intended Audience :: Developers",
