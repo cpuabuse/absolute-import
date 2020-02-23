@@ -15,13 +15,13 @@ from absolute_import import absolute_import
 """
 Integration test for absolute-import.
 """
-class TestAbsoluteImport:
+class TestAbsoluteImportAndNamespace:
 	def test_import(self):
 		# Set the absolute import
-		absolute_import(file=__file__)
+		absolute_import(file=__file__, name=__name__, path=[Path(__file__).parent.as_posix()])
 
 		# Import aux module; Disabling the pylint due to inability to set .env in a crossplatform way for multiple targets
-		from integration.test_module import success # pylint: disable=import-error
+		from _input.success import success # pylint: disable=import-error
 
 		# Assert import was successful
 		assert success()
