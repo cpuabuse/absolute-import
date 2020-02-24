@@ -1,12 +1,17 @@
 """
-A package for creating a pre-commit hook.
+Works with absolute import.
 """
 
 from pathlib import Path
 from sys import path as sys_path
 from pkgutil import extend_path
 
+
 def absolute_import(file: str = None, path: str = None, name: str = None):
+	"""
+	Set up absolute import, and optionally namespace.
+	"""
+
 	# File must be provided
 	if file == None:
 		raise ValueError

@@ -12,11 +12,17 @@ if target_path not in path:
 # Importing from __init__.py
 from absolute_import import absolute_import
 
-"""
-Integration test for absolute-import.
-"""
+
 class TestAbsoluteImportAndNamespace:
+	"""
+	Integration test for absolute-import.
+	"""
+
 	def test_import(self):
+		"""
+		Test the import of success module.
+		"""
+
 		# Set the absolute import
 		absolute_import(file=__file__, name=__name__, path=[Path(__file__).parent.as_posix()])
 

@@ -2,8 +2,10 @@
 An auxiliary test module.
 """
 
-"""
-Always execute successfully.
-"""
+
 def success():
+	"""
+	Always execute successfully.
+	"""
+
 	return True

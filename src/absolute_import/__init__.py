@@ -1,5 +1,5 @@
 """
-A package for creating a pre-commit hook.
+A package for setting up absolute import and namespaces.
 """
 
 # Bootstrap to be able to perform absolute imports as standalone code
