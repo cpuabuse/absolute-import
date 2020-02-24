@@ -5,9 +5,9 @@ Performs an integration test for absolute_import.py.
 # Bootstrap for package import
 from pathlib import Path
 from sys import path
-target_path: str = Path(__file__).parent.joinpath("..").joinpath("..").joinpath("src").as_posix()
+target_path: str = str(Path(__file__).parent.joinpath("..").joinpath("..").joinpath("src").resolve())
 if target_path not in path:
-	path.append(target_path)
+	path.insert(1, target_path) # Inserting to ensure the use of local package
 
 # Importing from __init__.py
 from absolute_import import absolute_import

@@ -16,8 +16,8 @@ def absolute_import(file: str = None, path: str = None, name: str = None):
 		__path__ = extend_path(path, name)
 	elif path != None or name != None:
 		raise ValueError
-	
+
 	# Bootstrap to be able to perform absolute imports as standalone code
-	parent_path: str = Path(file).parent.joinpath("..").as_posix()
+	parent_path: str = str(Path(file).parent.joinpath("..").resolve())
 	if parent_path not in sys_path:
 		sys_path.append(parent_path)
